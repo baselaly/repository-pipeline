@@ -2,6 +2,14 @@
     "name": "basel/repository-pipeline",
     "description": "Package to create repositories for each model and using pipeline in filters",
     "type": "composer-plugin",
+    "keywords": [
+        "image",
+        "gd",
+        "imagick",
+        "laravel",
+        "watermark",
+        "thumbnail"
+    ],
     "authors": [
         {
             "name": "baselaly",
@@ -10,6 +18,18 @@
     ],
     "require": {
         "php": "^8.0",
-        "laravel/framework": "^8.0"
+        "laravel/framework": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Basel\\RepositoryPipeline\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Basel\\RepositoryPipeline\\RepositoryPipelineProvider"
+            ]
+        }
     }
 }
