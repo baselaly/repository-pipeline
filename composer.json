@@ -10,6 +10,7 @@
         "search",
         "model"
     ],
+    "license": "MIT",
     "authors": [
         {
             "name": "baselaly",
