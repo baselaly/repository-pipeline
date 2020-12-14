@@ -33,7 +33,7 @@ interface RepositoryInterface
      * @param array $data
      * @return bool
      */
-    public function update(Model $model, array $data): bool;
+    public static function update(Model $model, array $data): bool;
 
     /**
      * find
@@ -50,5 +50,5 @@ interface RepositoryInterface
      * @param mixed $model
      * @return bool
      */
-    public function delete(Model $model): bool;
+    public static function delete(Model $model): bool;
 }

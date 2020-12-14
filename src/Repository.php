@@ -77,7 +77,7 @@ class Repository implements RepositoryInterface
      * @param array $data
      * @return bool
      */
-    public function update(Model $model, array $data): bool
+    public static function update(Model $model, array $data): bool
     {
         return $model->update($data);
     }
@@ -88,7 +88,7 @@ class Repository implements RepositoryInterface
      * @param Model $model
      * @return bool
      */
-    public function delete(Model $model): bool
+    public static function delete(Model $model): bool
     {
         return $model->delete();
     }
