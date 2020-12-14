@@ -19,6 +19,7 @@
         "php": "^8.0",
         "laravel/framework": "^6.0"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Basel\\RepositoryPipeline\\": "src"
