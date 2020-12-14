@@ -5,7 +5,7 @@ basel/repository-pipeline is a Laravel Package That make repository layer for ea
 ## Requirements
 
 - PHP >= 8.0.0
-- Laravel >= 6.0
+- Laravel >= 8.0
 
 ## Code Examples
 
