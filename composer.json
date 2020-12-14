@@ -1,14 +1,13 @@
 {
     "name": "basel/repository-pipeline",
     "description": "Package to create repositories for each model and using pipeline in filters",
-    "type": "composer-plugin",
     "keywords": [
-        "image",
-        "gd",
-        "imagick",
+        "repository",
+        "pipeline",
+        "design pattern",
         "laravel",
-        "watermark",
-        "thumbnail"
+        "filters",
+        "search"
     ],
     "authors": [
         {
