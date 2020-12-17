@@ -83,15 +83,16 @@ class Repository implements RepositoryInterface
     }
 
     /**
-     * update
+     * create
      *
-     * @param Model $model
+     * @param string $model
      * @param array $data
      * @return bool
      */
-    public static function create(Model $model, array $data): Model
+    public static function create(string $model, array $data): Model
     {
-        return $model->create($data);
+        $model = "\\" . $model;
+        return $model::create($data);
     }
 
     /**
