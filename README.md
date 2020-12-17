@@ -18,7 +18,9 @@ $products = Repository::get(Product::class, $filters, $perPage = 1);
 
 $product= Repository::find(Product::class, $filters);
 
-$isUpdated = Repository::find($product,['name'=>'new name','description'=>'new description']);
+$new_product = Repository::create(Product::class, ['name'=>'product','description'=>'description']);
 
-$isDeleted = Repository::find($product);
+$isUpdated = Repository::update($product,['name'=>'new name','description'=>'new description']);
+
+$isDeleted = Repository::delete($product);
 ```

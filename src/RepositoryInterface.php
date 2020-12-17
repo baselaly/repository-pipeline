@@ -24,7 +24,7 @@ interface RepositoryInterface
      * @param array $filters
      * @return Collection|LengthAwarePaginator
      */
-    public static function get(string $model, array $filters, int $perPage = 0): Collection|LengthAwarePaginator;
+    public static function get(string $model, array $filters, int $perPage = 0): Collection | LengthAwarePaginator;
 
     /**
      * update
@@ -34,6 +34,15 @@ interface RepositoryInterface
      * @return bool
      */
     public static function update(Model $model, array $data): bool;
+
+    /**
+     * create
+     *
+     * @param Model $model
+     * @param array $data
+     * @return Model
+     */
+    public static function create(Model $model, array $data): Model;
 
     /**
      * find
